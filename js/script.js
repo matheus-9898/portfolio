@@ -1,3 +1,5 @@
+$('#overlay').fadeIn(50);
+    
 $(function () {
     $('#overlay').fadeOut(200);
 
