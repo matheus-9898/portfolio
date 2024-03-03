@@ -1,5 +1,5 @@
     // Quando o documento estiver pronto, oculte o overlay
-    $('#overlay').fadeIn().css('display','flex');
+    $('#overlay').fadeIn();
 
     // Adicione um evento de carregamento para mostrar o overlay quando o conteúdo da página estiver sendo carregado
 /*     $(window).on('load', function(){
