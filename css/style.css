@@ -285,6 +285,11 @@ header #navSocials i:hover {
     margin-bottom: 10px;
     font-size: 17px;
 }
+#sectionSobreMim #centerSobreMim #contTxtSobreMim a{
+    text-decoration: underline;
+    margin-top: 10px;
+    display: inline-block;
+}
 
 /* #endregion */
 
