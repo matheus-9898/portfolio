@@ -351,10 +351,15 @@ header #navSocials i:hover {
 }
 
 #sectionProjetos #centerProjetos #listaProjetos {
-    display: flex;
+/*     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 40px; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,300px));
     gap: 40px;
+    justify-content: center;
 }
 
 /* #endregion */
@@ -366,12 +371,14 @@ header #navSocials i:hover {
     border-radius: 10px;
     padding: 40px;
     width: 100%;
-    max-width: 300px;
+    /* max-width: 300px; */
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
+    /* gap: 20px; */
+    height: 450px;
 }
 
 .itemProjetos .verMais {
@@ -701,7 +708,9 @@ header #navSocials i:hover {
     #sectionSobreMim #centerSobreMim h1>span {
         font-size: 24px;
     }
-
+    #sectionSobreMim #centerSobreMim #contTxtSobreMim{
+        text-align: center;
+    }
     #sectionSobreMim #centerSobreMim #contTxtSobreMim h2 {
         text-align: center;
         margin-bottom: 40px;
