@@ -81,7 +81,6 @@ h2 {
 }
 
 h3 {
-    text-align: center;
     font-size: 16px;
     cursor: default;
     user-select: none;
@@ -334,6 +333,7 @@ header #navSocials i:hover {
 #sectionConhecimentos #centerConhecimentos #listaConhecimentos>div h3 {
     letter-spacing: 1px;
     font-weight: normal;
+    text-align: center;
 }
 
 /* #endregion */
@@ -351,15 +351,9 @@ header #navSocials i:hover {
 }
 
 #sectionProjetos #centerProjetos #listaProjetos {
-/*     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 40px; */
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,300px));
+    display: flex;
+    flex-direction: column;
     gap: 40px;
-    justify-content: center;
 }
 
 /* #endregion */
@@ -367,99 +361,47 @@ header #navSocials i:hover {
 /* #region ITEM PROJETO */
 .itemProjetos {
     background-color: var(--corFundoSec);
-    flex-shrink: 0;
     border-radius: 10px;
-    padding: 40px;
-    width: 100%;
-    /* max-width: 300px; */
-    position: relative;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /* gap: 20px; */
-    height: 450px;
 }
-
-.itemProjetos .verMais {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: rgba(100, 100, 100, 0.3);
-    align-items: center;
-    justify-content: center;
-    display: none;
-}
-
-.itemProjetos .verMais ul{
+.contImgProj{
+    flex: 1;
     display: flex;
-    gap: 20px;
     justify-content: center;
     align-items: center;
 }
-
-.itemProjetos .verMais li i{
-    color: var(--azulPrim);
-    transition: scale 0.3s ease;
-    cursor: pointer;
-}
-
-.itemProjetos .verMais li i:hover{
-    color: var(--azulSec);
-    scale: 1.05;
-}
-
-.itemProjetos h3 {
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-.itemProjetos img {
-    border-radius: 10px;
-    width: 100%;
+.contImgProj img {
+    width: 80%;
     height: auto;
 }
-
-.itemProjetos p {
-    text-align: center;
+.contDescProj{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-
-.itemProjetos .descLonga{
-    display: none;
-}
-
-.contModalProj{
-    /* background-color: rgb(0, 0, 0, 0.5); */
-    backdrop-filter: blur(3px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
+.contDescProj h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    display: none;
 }
-.contModalProj .centerModalProj{
-    background-color: var(--corFundoSec);
-    width: 90%;
-    max-width: 500px;
-    height: 200px;
-    padding: 40px;
-    border-radius: 10px;
-    position: relative;
+.contDescProj h3 span{
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 10px;
+    color: var(--corTxtSec);
 }
-
-.contModalProj .centerModalProj .fecharModalProj{
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.contDescProj p {
+    
+}
+.contDescProj .contLinksProj{
+    display: flex;
+    gap: 20px;
+}
+.contDescProj .contLinksProj path{
+    fill: var(--azulPrim);
 }
 /* #endregion */
 

@@ -204,42 +204,6 @@ $(function () {
     /* #endregion */
 
     /* #region  ITEM PROJETO */
-    //Ver mais do projeto
-    $('.itemProjetos').mouseenter(function () {
-        if($(window).width() <= 768){
-            setTimeout(() => {
-                $(this).find('.verMais').fadeIn(200).css('display', 'flex');
-            }, 100);
-        }else{
-            $(this).find('.verMais').fadeIn(200).css('display', 'flex');
-        }
-
-    })
-    $('.itemProjetos').mouseleave(function () {
-        $(this).find('.verMais').fadeOut(200);
-    })
-
-    //abrir modal
-    $('.verDescLonga').click(function () {
-        
-
-        $('#descLongaModal').html($(this).closest('.itemProjetos').find('.descLonga').html());
-        $('.contModalProj').fadeIn(200).css('display', 'flex');
-    })
-
-    //fechar modal
-    $(window).scroll(function () {
-        if ($('.contModalProj').css('display') != 'none') {
-            $('.contModalProj').fadeOut(200);
-        }
-    })
-    $('.contModalProj').click(function (e) {
-        if (e.target === this) {
-            $('.contModalProj').fadeOut(200);
-        }
-    })
-    $('.fecharModalProj').click(function () {
-        $('.contModalProj').fadeOut(200);
-    })
+    
     /* #endregion */
 })
