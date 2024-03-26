@@ -203,7 +203,4 @@ $(function () {
     }
     /* #endregion */
 
-    /* #region  ITEM PROJETO */
-    
-    /* #endregion */
 })
