@@ -353,7 +353,7 @@ header #navSocials i:hover {
 #sectionProjetos #centerProjetos #listaProjetos {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
 }
 
 /* #endregion */
@@ -364,6 +364,7 @@ header #navSocials i:hover {
     border-radius: 10px;
     padding: 20px;
     display: flex;
+    gap: 60px;
 }
 .contImgProj{
     flex: 2;
@@ -372,20 +373,24 @@ header #navSocials i:hover {
     align-items: center;
 }
 .contImgProj img {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 .contDescProj{
+    padding: 20px 0;
     flex: 3;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
 }
 .contDescProj h3 {
     font-size: 20px;
     letter-spacing: 1px;
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+    text-wrap: nowrap;
 }
 .contDescProj h3 span{
     font-weight: 400;
@@ -393,12 +398,10 @@ header #navSocials i:hover {
     margin-left: 10px;
     color: var(--corTxtSec);
 }
-.contDescProj p {
-    
-}
 .contDescProj .contLinksProj{
     display: flex;
     gap: 20px;
+    margin-top: 5px;
 }
 .contDescProj .contLinksProj path{
     fill: var(--azulPrim);
@@ -669,5 +672,26 @@ header #navSocials i:hover {
 
     #contTema {
         background-color: var(--corFundoPrim);
+    }
+    .itemProjetos {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contImgProj img{
+        width: 50%;
+    }
+    .contDescProj{
+        align-items: center;
+    }
+    .contDescProj p{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 535px) {
+    .contImgProj img{
+        width: 80%;
+    }
+    .contDescProj{
+        gap: 20px;
     }
 }
