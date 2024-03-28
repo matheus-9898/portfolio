@@ -387,15 +387,14 @@ header #navSocials i:hover {
 .contDescProj h3 {
     font-size: 20px;
     letter-spacing: 1px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    text-wrap: nowrap;
+    gap: 15px;
 }
 .contDescProj h3 span{
     font-weight: 400;
     font-size: 14px;
-    margin-left: 10px;
     color: var(--corTxtSec);
 }
 .contDescProj .contLinksProj{
@@ -693,5 +692,8 @@ header #navSocials i:hover {
     }
     .contDescProj{
         gap: 20px;
+    }
+    .contDescProj h3{
+        flex-direction: column;
     }
 }
